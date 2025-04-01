@@ -3,7 +3,7 @@
 #include <concepts>
 
 template <typename T>
-concept PuntoMobile = std::is_floating_point_v<T>;
+concept FloatingPoint = std::floating_point<T>;
 
 template<FloatingPoint T>
 class numero_complesso {
